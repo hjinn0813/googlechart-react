@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import GoogleChart from './pages/Googlechart';
+import LineGraph from './pages/LineGraph';
+import BarGraph from './pages/BarGraph';
+import Table from './pages/Table';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<GoogleChart />} />
+          <Route path="/item" element={<GoogleChart />} />
+          <Route path="/line" element={<LineGraph />} />
+          <Route path="/bar" element={<BarGraph />} />
+          <Route path="/table" element={<Table />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

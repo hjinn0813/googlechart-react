@@ -1,0 +1,19 @@
+// header style
+
+header {
+  width: 70vw;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: green;
+  padding: 20px;
+}
+
+.header-link {
+  text-decoration: none;
+  color: white;
+}
+.header-txt {
+  font-weight: 600;
+}

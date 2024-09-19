@@ -14,7 +14,7 @@ export default function LineGraph() {
 
     const drawLineChart = () => {
       const data = new window.google.visualization.DataTable();
-      // DataTable() => 막대 그래프를 그리기 위한 테이블 생성 메소드
+      // DataTable() => 그래프를 그리기 위한 테이블 생성 메소드
 
       data.addColumn('number', 'X');
       data.addColumn('number', 'sales');

@@ -8,7 +8,7 @@ export default function BarGraph() {
   useEffect(() => {
     const loadBarChart = () => {
       window.google.charts.load('current', { packages: ['corechart', 'bar'] });
-      // 기본 패키지 중에 bar 차트를 가져오겠다
+      // 기본 패키지에 bar 차트를 포함해서 가져오겠다
       window.google.charts.setOnLoadCallback(drawBarChart);
     };
 

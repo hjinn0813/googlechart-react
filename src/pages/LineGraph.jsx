@@ -8,7 +8,7 @@ export default function LineGraph() {
   useEffect(() => {
     const loadLineChart = () => {
       window.google.charts.load('current', { packages: ['corechart', 'line'] });
-      // 기본 패키지 중에 line 차트를 가져오겠다
+      // 기본 패키지에 line 차트를 포함해서 가져오겠다
       window.google.charts.setOnLoadCallback(drawLineChart);
     };
 

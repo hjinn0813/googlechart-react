@@ -1,0 +1,35 @@
+.weather-main {
+  width: 25rem;
+  height: 14rem;
+  border-radius: 20px;
+  position: relative;
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 30px;
+  cursor: pointer;
+
+  .weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .weather-place {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .weather-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .temp-now {
+    font-size: 48px;
+    font-weight: 900;
+  }
+}

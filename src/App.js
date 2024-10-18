@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import GoogleChart from './pages/Googlechart';
+import PieGraph from './pages/PieGraph';
 import LineGraph from './pages/LineGraph';
 import BarGraph from './pages/BarGraph';
 import Table from './pages/Table';
+import Main from './pages/Main';
 
 function App() {
   return (
@@ -11,8 +12,8 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<GoogleChart />} />
-          <Route path="/item" element={<GoogleChart />} />
+          <Route path="/" element={<Main />} />
+          <Route path="/item" element={<PieGraph />} />
           <Route path="/line" element={<LineGraph />} />
           <Route path="/bar" element={<BarGraph />} />
           <Route path="/table" element={<Table />} />

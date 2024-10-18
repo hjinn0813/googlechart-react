@@ -8,6 +8,11 @@ export default function Header() {
   return (
     <header>
       <div className="header-btns">
+        <Link to="/" className="header-link">
+          <div className="header-txt">메인</div>
+        </Link>
+      </div>
+      <div className="header-btns">
         <Link to="/item" className="header-link">
           <div className="header-txt">파이형</div>
         </Link>

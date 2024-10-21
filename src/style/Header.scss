@@ -1,19 +1,38 @@
 // header style
 
 header {
-  width: 70vw;
+  width: 95%;
   height: 20%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: green;
+  flex-direction: column;
+  background-color: lightgrey;
   padding: 20px;
 }
 
 .header-link {
   text-decoration: none;
-  color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 .header-txt {
   font-weight: 600;
+}
+
+.upper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.875rem;
+}
+
+.btns {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }

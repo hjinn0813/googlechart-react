@@ -5,6 +5,7 @@ import LineGraph from './pages/LineGraph';
 import BarGraph from './pages/BarGraph';
 import Table from './pages/Table';
 import Main from './pages/Main';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Main />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/item" element={<PieGraph />} />
           <Route path="/line" element={<LineGraph />} />
           <Route path="/bar" element={<BarGraph />} />

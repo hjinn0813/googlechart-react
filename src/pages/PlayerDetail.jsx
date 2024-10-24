@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import '../style/Players.scss';
+import { useNavigate } from 'react-router-dom';
 
 const getPlayerById = async (id) => {
   const URL = `http://127.0.0.1:8001/players/${id}`;
@@ -13,6 +14,7 @@ const getPlayerById = async (id) => {
 };
 
 export default function PlayerDetail() {
+  const navigate = useNavigate();
   const { id } = useParams(); // URL에서 선수 ID 가져오기
   const { data, error, isLoading } = useQuery({
     queryKey: ['player', id],
@@ -37,6 +39,9 @@ export default function PlayerDetail() {
         <p>
           <b>V리그 데뷔:</b> {data.debut}
         </p>
+      </div>
+      <div className="back" onClick={() => navigate(`/players`)}>
+        이전 화면
       </div>
     </div>
   );

@@ -6,6 +6,8 @@ import BarGraph from './pages/BarGraph';
 import Table from './pages/Table';
 import Main from './pages/Main';
 import Login from './pages/Login';
+import Players from './pages/Players';
+import PlayerDetail from './pages/PlayerDetail';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/players" element={<Players />} />
+          <Route path="/players/:id" element={<PlayerDetail />} />
           <Route path="/item" element={<PieGraph />} />
           <Route path="/line" element={<LineGraph />} />
           <Route path="/bar" element={<BarGraph />} />

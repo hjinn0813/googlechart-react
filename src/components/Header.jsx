@@ -4,8 +4,6 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import useStore from '../store/useStore'; // Zustand 스토어 가져오기
-import LogoutIcon from '@mui/icons-material/Logout';
-import LoginIcon from '@mui/icons-material/Login';
 import '../style/Header.scss';
 
 export default function Header() {
@@ -45,14 +43,12 @@ export default function Header() {
         <div className="time">오늘은, {currentTime}</div>
         <div className="loginbtn">
           {isLoggedIn ? (
-            <div className="header-link" onClick={handleLogout}>
-              <LogoutIcon className="icon" />
-              <div>Logout</div>
+            <div className="header-link ebtn" onClick={handleLogout}>
+              로그아웃
             </div>
           ) : (
-            <Link to="/Login" className="header-link">
-              <LoginIcon className="icon" />
-              <div>Login</div>
+            <Link to="/Login" className="header-link ebtn">
+              로그인
             </Link>
           )}
         </div>
@@ -61,6 +57,11 @@ export default function Header() {
         <div className="header-btns">
           <Link to="/" className="header-link">
             <div className="header-txt">메인</div>
+          </Link>
+        </div>
+        <div className="header-btns">
+          <Link to="/players" className="header-link">
+            <div className="header-txt">🏐💙</div>
           </Link>
         </div>
         <div className="header-btns">

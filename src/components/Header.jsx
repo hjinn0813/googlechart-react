@@ -61,7 +61,12 @@ export default function Header() {
         </div>
         <div className="header-btns">
           <Link to="/players" className="header-link">
-            <div className="header-txt">🏐💙</div>
+            <div className="header-txt">🏐</div>
+          </Link>
+        </div>
+        <div className="header-btns">
+          <Link to="/altos" className="header-link">
+            <div className="header-txt">💙</div>
           </Link>
         </div>
         <div className="header-btns">

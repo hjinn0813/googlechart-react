@@ -1,0 +1,79 @@
+$skyblue: #0091d7;
+$deepblue: #004b9c;
+$orange: #eb6900;
+
+// altos players all
+.altos-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 2.25rem;
+  line-height: 1.5;
+  text-align: center;
+  color: $deepblue;
+}
+
+thead {
+  background-color: $orange;
+  color: white;
+}
+tr {
+  line-height: 1.8;
+
+  tbody > &:hover {
+    background-color: $skyblue;
+    color: white;
+  }
+}
+th,
+td {
+  padding: 0.75rem;
+  text-align: center;
+}
+.altos-name {
+  cursor: pointer;
+}
+table {
+  width: 100%;
+}
+
+// altos detail
+.altos-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  margin: 1.5rem;
+}
+.altos-detail {
+  border: 1px solid $skyblue;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  width: 26.25rem;
+  margin: 1.5rem;
+}
+
+.btn-area {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+@mixin altos-btn {
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  width: fit-content;
+  cursor: pointer;
+}
+.altos-all {
+  background-color: $skyblue;
+  @include altos-btn();
+}
+.altos-prev {
+  background-color: $deepblue;
+  @include altos-btn();
+}
+.altos-next {
+  background-color: $orange;
+  @include altos-btn();
+}

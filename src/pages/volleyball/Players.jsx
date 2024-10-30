@@ -4,7 +4,7 @@ import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import '../style/Players.scss';
+import '../../style/Players.scss';
 
 const getPlayers = async () => {
   const URL = 'http://127.0.0.1:8001/players';

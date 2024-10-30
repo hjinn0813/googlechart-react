@@ -6,8 +6,8 @@ import BarGraph from './pages/BarGraph';
 import Table from './pages/Table';
 import Main from './pages/Main';
 import Login from './pages/Login';
-import Players from './pages/Players';
-import PlayerDetail from './pages/PlayerDetail';
+import Players from './pages/volleyball/Players';
+import PlayerDetail from './pages/volleyball/PlayerDetail';
 
 function App() {
   return (

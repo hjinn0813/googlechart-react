@@ -8,11 +8,9 @@ import { useNavigate } from 'react-router-dom';
 import '../../style/Altos.scss';
 
 const getAltosById = async (id) => {
-  const URL = '/Altos.json'; // URL 수정
+  const URL = `http://127.0.0.1:8001/altos/${id}`;
   const resp = await axios.get(URL);
-  const altos = resp.data;
-  return altos.find((player) => player.id === parseInt(id));
-  // ID에 해당하는 선수 찾기
+  return resp.data;
 };
 
 export default function AltosDetail() {

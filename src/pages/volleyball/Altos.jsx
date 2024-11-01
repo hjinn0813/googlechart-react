@@ -7,7 +7,7 @@ import axios from 'axios';
 import '../../style/Altos.scss';
 
 const getAltos = async () => {
-  const URL = '/Altos.json';
+  const URL = 'http://127.0.0.1:8001/altos';
   const resp = await axios.get(URL);
   return resp.data;
 };

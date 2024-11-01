@@ -10,6 +10,8 @@ import Players from './pages/volleyball/Players';
 import PlayerDetail from './pages/volleyball/PlayerDetail';
 import Altos from './pages/volleyball/Altos';
 import AltosDetail from './pages/volleyball/AltosDetail';
+import Spiders from './pages/volleyball/Spiders';
+import SpidersDetail from './pages/volleyball/SpidersDetail';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path="/players/:id" element={<PlayerDetail />} />
           <Route path="/altos" element={<Altos />} />
           <Route path="/altos/:id" element={<AltosDetail />} />
+          <Route path="/spiders" element={<Spiders />} />
+          <Route path="/spiders/:id" element={<SpidersDetail />} />
           <Route path="/item" element={<PieGraph />} />
           <Route path="/line" element={<LineGraph />} />
           <Route path="/bar" element={<BarGraph />} />

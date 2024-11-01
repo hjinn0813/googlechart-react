@@ -1,0 +1,78 @@
+$purple: #351b6f;
+$pink: #c408a1;
+
+// spiders players all
+.spiders-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 2.25rem;
+  line-height: 1.5;
+  text-align: center;
+  color: $purple;
+}
+
+.p-head {
+  background-color: $purple;
+  color: white;
+}
+.p-row {
+  line-height: 1.8;
+
+  .p-body > &:hover {
+    background-color: $pink;
+    color: white;
+  }
+}
+.p-att,
+.p-value {
+  padding: 0.75rem;
+  text-align: center;
+}
+.spiders-name {
+  cursor: pointer;
+}
+table {
+  width: 100%;
+}
+
+// spiders detail
+.spiders-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  margin: 1.5rem;
+}
+.spiders-detail {
+  border: 1px solid $pink;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  width: 26.25rem;
+  margin: 1.5rem;
+}
+
+.btn-area {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+@mixin spiders-btn {
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  width: fit-content;
+  cursor: pointer;
+}
+.spiders-all {
+  background-color: darkorchid;
+  @include spiders-btn();
+}
+.spiders-prev {
+  background-color: $purple;
+  @include spiders-btn();
+}
+.spiders-next {
+  background-color: $pink;
+  @include spiders-btn();
+}

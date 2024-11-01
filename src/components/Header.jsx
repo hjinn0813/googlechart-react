@@ -70,6 +70,11 @@ export default function Header() {
           </Link>
         </div>
         <div className="header-btns">
+          <Link to="/spiders" className="header-link">
+            <div className="header-txt">💗</div>
+          </Link>
+        </div>
+        <div className="header-btns">
           <Link to="/item" className="header-link">
             <div className="header-txt">파이형</div>
           </Link>

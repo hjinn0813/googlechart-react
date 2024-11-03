@@ -1,10 +1,9 @@
 // altos detail
 
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
 import '../../style/Altos.scss';
 
 const getAltosById = async (id) => {

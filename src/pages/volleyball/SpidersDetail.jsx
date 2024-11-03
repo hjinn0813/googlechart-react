@@ -1,8 +1,7 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
 import '../../style/Spiders.scss';
 
 const getSpidersById = async (id) => {

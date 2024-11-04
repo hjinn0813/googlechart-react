@@ -21,6 +21,9 @@ header {
 .header-txt {
   font-weight: 600;
 }
+.header-btns {
+  margin: 1rem 0;
+}
 
 // 상단 헤더
 .upper {
@@ -28,7 +31,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1.875rem;
+  margin-bottom: 1.25rem;
 }
 .ebtn {
   color: white;
@@ -38,9 +41,11 @@ header {
 }
 
 // 하단 버튼들
-.btns {
+.btns,
+.graphs {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  border-top: 1px solid white;
 }

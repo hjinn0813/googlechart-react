@@ -60,6 +60,11 @@ export default function Header() {
           </Link>
         </div>
         <div className="header-btns">
+          <Link to="/board" className="header-link">
+            <div className="header-txt">게시판</div>
+          </Link>
+        </div>
+        <div className="header-btns">
           <Link to="/players" className="header-link">
             <div className="header-txt">🏐</div>
           </Link>
@@ -74,6 +79,8 @@ export default function Header() {
             <div className="header-txt">💗</div>
           </Link>
         </div>
+      </section>
+      <section className="graphs">
         <div className="header-btns">
           <Link to="/item" className="header-link">
             <div className="header-txt">파이형</div>

@@ -12,14 +12,14 @@ $orange: #eb6900;
   color: $deepblue;
 }
 
-thead {
+.thead {
   background-color: $orange;
   color: white;
 }
-tr {
+.tr {
   line-height: 1.8;
 
-  tbody > &:hover {
+  .tbody > &:hover {
     background-color: $skyblue;
     color: white;
   }

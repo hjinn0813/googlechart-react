@@ -31,8 +31,8 @@ export default function Altos() {
         <div>2024~25 시즌 선수 명단</div>
       </div>
       <table>
-        <thead>
-          <tr>
+        <thead className="thead">
+          <tr className="tr">
             <th>등번호</th>
             <th>이름</th>
             <th>생일</th>
@@ -44,9 +44,9 @@ export default function Altos() {
             <th>특이사항</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="tbody">
           {data.map((altos) => (
-            <tr key={altos.id}>
+            <tr key={altos.id} className="tr">
               <td>{altos.backNo}</td>
               <td
                 className="altos-name"
